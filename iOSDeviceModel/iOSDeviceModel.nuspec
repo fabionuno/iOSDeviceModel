@@ -12,10 +12,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>iOSDeviceModel is a C# class helper to get the iOS model using the hw.machine string.
 
-    How to use:
-
-    var hardware = iOS.Hardware.DeviceHardware.HardwareModel;
-    var model = iOS.Hardware.DeviceModel.Model(hardware);</description>
+How to use:
+var model = DeviceModel.Model(DeviceHardware.HardwareModel);</description>
     <releaseNotes>Fixed namespace to iOS.Hardware</releaseNotes>
     <copyright></copyright>
     <tags>ios device hardware model version</tags>
