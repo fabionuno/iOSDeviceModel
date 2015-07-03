@@ -11,7 +11,7 @@
     <iconUrl>https://github.com/wttton/iOSDeviceModel/blob/master/icon/CPU.png?raw=true</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>iOSDeviceModel is a C# class helper to get the iOS model using the hw.machine string</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <releaseNotes></releaseNotes>
     <copyright></copyright>
     <tags>ios device hardware model version</tags>
   </metadata>
