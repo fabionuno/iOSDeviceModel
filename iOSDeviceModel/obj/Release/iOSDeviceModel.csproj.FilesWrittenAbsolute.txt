@@ -1,0 +1,5 @@
+/Users/welington/Documents/iOSDeviceModel/iOSDeviceModel/obj/Release/Xamarin.iOS,Version=v1.0.AssemblyAttribute.cs
+/Users/welington/Documents/iOSDeviceModel/iOSDeviceModel/bin/Release/iOSDeviceModel.dll.mdb
+/Users/welington/Documents/iOSDeviceModel/iOSDeviceModel/bin/Release/iOSDeviceModel.dll
+/Users/welington/Documents/iOSDeviceModel/iOSDeviceModel/obj/Release/iOSDeviceModel.dll
+/Users/welington/Documents/iOSDeviceModel/iOSDeviceModel/obj/Release/iOSDeviceModel.dll.mdb
