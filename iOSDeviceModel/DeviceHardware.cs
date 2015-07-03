@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using ObjCRuntime;
 
 
-namespace Xamarin.iOS
+namespace iOS.Hardware
 {
     public static class DeviceHardware
     {

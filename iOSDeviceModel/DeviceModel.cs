@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Xamarin.iOS
+namespace iOS.Hardware
 {
     public static class DeviceModel
     {
