@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>iOSDeviceModel</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>iOS Device Model</title>
     <authors>Welington Ramos</authors>
     <owners>Welington Ramos</owners>
@@ -10,8 +10,13 @@
     <projectUrl>https://github.com/wttton/iOSDeviceModel</projectUrl>
     <iconUrl>https://github.com/wttton/iOSDeviceModel/blob/master/icon/CPU.png?raw=true</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>iOSDeviceModel is a C# class helper to get the iOS model using the hw.machine string</description>
-    <releaseNotes></releaseNotes>
+    <description>iOSDeviceModel is a C# class helper to get the iOS model using the hw.machine string.
+
+    How to use:
+
+    var hardware = iOS.Hardware.DeviceHardware.HardwareModel;
+    var model = iOS.Hardware.DeviceModel.Model(hardware);</description>
+    <releaseNotes>Fixed namespace to iOS.Hardware</releaseNotes>
     <copyright></copyright>
     <tags>ios device hardware model version</tags>
   </metadata>
