@@ -10,7 +10,7 @@ namespace iOS.Hardware
                 return "Unknown";
 
             // http://support.apple.com/kb/HT3939
-            if (fromHardware.StartsWith("iPhone"))
+            if (fromHardware.StartsWith("iPhone", StringComparison.InvariantCulture))
             {
                 // ************
                 // iPhone
@@ -130,9 +130,49 @@ namespace iOS.Hardware
                 // FCC Doc(s): https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&calledFromFrame=N&application_id=664225&fcc_id=%27BCG-E2817A%27
                 if (fromHardware == "iPhone7,1")
                     return "iPhone 6 Plus";
+
+                // ************
+                // iPhone 6S
+                // ************
+                // Model(s): A1633, A1688 & A1700
+                // Apple Tech specs: http://support.apple.com/kb/SP726
+                if (fromHardware == "iPhone8,1")
+                    return "iPhone 6S";
+
+                // ************
+                // iPhone 6S Plus
+                // ************
+                // Model(s): A1634, A1687 & A1699
+                // Apple Tech specs: http://support.apple.com/kb/SP727
+                if (fromHardware == "iPhone8,2")
+                    return "iPhone 6S Plus";
+
+                // ************
+                // iPhone SE
+                // ************
+                // Model(s): A1662 & A1723
+                // Apple Tech specs: https://support.apple.com/kb/SP738
+                if (fromHardware == "iPhone8,4")
+                    return "iPhone SE";
+
+                // ************
+                // iPhone 7
+                // ************
+                // Model(s): A1660, A1778, A1779 & A1780
+                // Apple Tech specs: https://support.apple.com/kb/SP743
+                if (fromHardware == "iPhone9,1" || fromHardware == "iPhone9,3")
+                    return "iPhone 7";
+
+                // ************
+                // iPhone 7 Plus
+                // ************
+                // Model(s): A1661, A1784, A1785 and A1786 
+                // Apple Tech specs: https://support.apple.com/kb/SP744
+                if (fromHardware == "iPhone9,2" || fromHardware == "iPhone9,4")
+                    return "iPhone 7 Plus";
             }
 
-            if (fromHardware.StartsWith("iPod"))
+            if (fromHardware.StartsWith("iPod", StringComparison.InvariantCulture))
             {
                 // ************
                 // iPod touch
@@ -178,9 +218,17 @@ namespace iOS.Hardware
                 // FCC Doc(s): https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&calledFromFrame=N&application_id=141880&fcc_id=%27BCG-A1421%27
                 if (fromHardware == "iPod5,1")
                     return "iPod touch 5G";
+
+                // ************
+                // iPod touch 6G
+                // ************
+                // Model(s): A1574
+                // Apple Tech specs: (A1574) https://support.apple.com/kb/SP720 
+                if (fromHardware == "iPod7,1")
+                    return "iPod touch 6G";
             }
 
-            if (fromHardware.StartsWith("iPad"))
+            if (fromHardware.StartsWith("iPad", StringComparison.InvariantCulture))
             {
                 // ************
                 // iPad
@@ -279,6 +327,39 @@ namespace iOS.Hardware
                     return "iPad Air 2";
 
                 // ************
+                // iPad Pro (12.9 inch)
+                // ************
+                // Apple Tech specs: https://support.apple.com/kb/SP723
+                // Model(s): A1584 (Wi-Fi) 
+                if (fromHardware == "iPad6,7")
+                    return "iPad Pro";
+                // Model(s): A1652 (Wi-Fi + Cellular)
+                if (fromHardware == "iPad6,8")
+                    return "iPad Pro Wi-Fi + Cellular";
+
+                // ************
+                // iPad Pro (9.7 inch)
+                // ************
+                // Apple Tech specs: https://support.apple.com/kb/SP739
+                // Model(s): A1673
+                if (fromHardware == "iPad6,3")
+                    return "iPad Pro (9.7-inch)";
+                // Model(s): A1674, A1675 (Wi-Fi + Cellular)
+                if (fromHardware == "iPad6,4")
+                    return "iPad Pro (9.7-inch) Wi-Fi + Cellular";
+
+                // ************
+                // iPad (9.7 inch - 5th generation)
+                // ************
+                // Apple Tech specs: http://support.apple.com/kb/SP751
+                // Model(s): A1822
+                if (fromHardware == "iPad6,11")
+                    return "iPad 5 Wi-Fi";
+                // Model(s): A1823
+                if (fromHardware == "iPad6,12")
+                    return "iPad 5 Wi-Fi + Cellular";
+
+                // ************
                 // iPad mini
                 // ************
                 // Apple Tech specs: http://support.apple.com/kb/SP661
@@ -328,6 +409,17 @@ namespace iOS.Hardware
                 // FCC Doc(s): https://apps.fcc.gov/oetcf/eas/reports/ViewExhibitReport.cfm?mode=Exhibits&calledFromFrame=N&application_id=482341&fcc_id=BCGA1601
                 if (fromHardware == "iPad4,9")
                     return "iPad mini 3 Wi-Fi + Cellular (TD-LTE)";
+
+                // ************
+                // iPad mini 4
+                // ************
+                // Apple Tech specs: http://support.apple.com/kb/SP725
+                // Model(s): A1538
+                if (fromHardware == "iPad5,1")
+                    return "iPad mini 4";
+                // Model(s): A1550
+                if (fromHardware == "iPad5,2")
+                    return "iPad mini 4 Wi-Fi + Cellular";
             }
 
             if (fromHardware == "i386" || fromHardware == "x86_64")
